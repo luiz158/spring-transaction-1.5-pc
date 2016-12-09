@@ -1,0 +1,16 @@
+global-exchange: global-exchange
+dead-letter-exchange-name: dead-letter-exchange
+payment-queue: payment
+payment-dead-letter-queue: payment-dead-letter-queue
+
+spring.datasource.url: jdbc:h2:mem:registration;MODE=Oracle;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+spring.datasource.username: "registration"
+spring.datasource.password: ""
+spring.datasource.driver-class-name: org.h2.Driver
+spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+spring.rabbitmq.host: localhost
+spring.rabbitmq.port: 5672
+spring.rabbitmq.username: guest
+spring.rabbitmq.password: guest
+server.port: 8080
